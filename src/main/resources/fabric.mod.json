@@ -1,0 +1,59 @@
+{
+    "schemaVersion": 1,
+    "id": "obeisance",
+    "version": "${version}",
+    "name": "Obeisance",
+    "description": "TODO",
+    "authors": [
+        "StellarWitch7"
+    ],
+    "contact": {
+        "homepage": "https://github,com/StellarWitch7/obeisance",
+        "sources": "https://github,com/StellarWitch7/obeisance",
+        "issues": "https://github.com/StellarWitch7/obeisance/issues"
+    },
+    "license": "MIT",
+    "icon": "assets/obeisance/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "stellarwitch7.obeisance.Obeisance"
+        ],
+        "client": [
+            "stellarwitch7.obeisance.ObeisanceClient"
+        ],
+        "fabric-datagen": [
+            "stellarwitch7.obeisance.datagen.ObeisanceDataGenerator"
+        ],
+        "cardinal-components-entity": [
+            "stellarwitch7.obeisance.cca.ModEntityComponents"
+        ],
+        "cardinal-components-world": [
+            "stellarwitch7.obeisance.cca.ModWorldComponents"
+        ]
+    },
+    "custom": {
+        "cardinal-components": [
+        ]
+    },
+    "mixins": [
+        "obeisance.mixins.json",
+        {
+            "config": "obeisance.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": ">=0.16.13",
+        "minecraft": "~1.21.1",
+        "java": ">=21",
+        "fabric-api": "*",
+        "owo": "*",
+        "lavender": "*",
+        "accessories": ">=1.0.0-beta.11",
+        "cicada": ">=0.8.2"
+    },
+    "suggests": {
+        "trickster": "2.0.0-beta.17"
+    }
+}
