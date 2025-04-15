@@ -1,19 +1,19 @@
-package stellarwitch7.obeisance.cca.entity;
+package stellarwitch7.obeisance.cca;
 
 import org.ladysnake.cca.api.v3.component.sync.AutoSyncedComponent;
 import org.ladysnake.cca.api.v3.component.tick.ClientTickingComponent;
 import org.ladysnake.cca.api.v3.component.tick.ServerTickingComponent;
 
-import net.minecraft.entity.mob.PathAwareEntity;
+import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.RegistryByteBuf;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 import net.minecraft.server.network.ServerPlayerEntity;
 
 public class IdentityComponent implements ServerTickingComponent, ClientTickingComponent, AutoSyncedComponent {
-    private final PathAwareEntity entity;
+    private final MobEntity entity;
 
-    public IdentityComponent(PathAwareEntity entity) {
+    public IdentityComponent(MobEntity entity) {
         this.entity = entity;
     }
 

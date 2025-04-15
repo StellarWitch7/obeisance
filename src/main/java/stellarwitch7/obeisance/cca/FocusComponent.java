@@ -1,20 +1,20 @@
-package stellarwitch7.obeisance.cca.world;
+package stellarwitch7.obeisance.cca;
 
 import org.ladysnake.cca.api.v3.component.sync.AutoSyncedComponent;
 import org.ladysnake.cca.api.v3.component.tick.ClientTickingComponent;
 import org.ladysnake.cca.api.v3.component.tick.ServerTickingComponent;
 
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.RegistryByteBuf;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.world.World;
 
-public class PylonsComponent implements ServerTickingComponent, ClientTickingComponent, AutoSyncedComponent {
-    private final World world;
+public class FocusComponent implements ServerTickingComponent, ClientTickingComponent, AutoSyncedComponent {
+    private final PlayerEntity player;
 
-    public PylonsComponent(World world) {
-        this.world = world;
+    public FocusComponent(PlayerEntity player) {
+        this.player = player;
     }
 
     @Override
