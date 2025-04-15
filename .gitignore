@@ -8,7 +8,6 @@ classes/
 # eclipse
 
 *.launch
-.factorypath
 
 # idea
 
@@ -41,5 +40,18 @@ replay_*.log
 *.jfr
 
 # direnv
-.direnv/
+
 .envrc
+.direnv/
+
+# wiki
+
+wiki/
+
+# generated code
+
+src/main/generatedJava/
+
+# idk something
+
+.factorypath
