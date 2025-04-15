@@ -35,6 +35,7 @@
     "custom": {
         "cardinal-components": [
             "obeisance:focus",
+            "obeisance:identity",
             "obeisance:pylons"
         ]
     },
